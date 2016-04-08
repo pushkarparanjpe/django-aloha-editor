@@ -122,7 +122,8 @@
         return event;
     }
 
-    aloha(document.querySelector('.aloha_editable'));
+    // console.log($('.aloha_editable'));
+    aloha.dom.query('.aloha_editable', document).map(aloha);
     aloha.editor.stack.unshift(middleware);
 
 </script>
